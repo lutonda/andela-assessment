@@ -1,4 +1,4 @@
-# andela-assessment
+# Andela Assessment
 
 
 The test will be done using Coderpad (www.coderpad.io)
