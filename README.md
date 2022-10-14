@@ -8,7 +8,8 @@ You will be able to Google for hints during the interview.
 Context:
 Given the following:
 List of Events
-● Event object example:
+```csharp
+//Event object example:
 var events = new List<Event>{
 new Event{ Name = "Phantom of the Opera", City = "New York"},
 new Event{ Name = "Metallica", City = "Los Angeles"},
@@ -20,11 +21,12 @@ new Event{ Name = "LadyGaGa", City = "Chicago"},
 new Event{ Name = "LadyGaGa", City = "San Francisco"},
 new Event{ Name = "LadyGaGa", City = "Washington"}
 };
-● Customer
+//Customer
 var customer = new Customer{ Name = "Mr. Fake", City = "New York"};
-● Methods:
+// Methods:
 GetDistance(string fromCity, string toCity)
 AddToEmail(Customer, Event)
+```
 and a few others i didnt have to use and i dont remember the details
 Imagine we're running a business where doing ticket selling.
 So we have a website where we are selling tickets for live events. The specific business
