@@ -1,0 +1,15 @@
+/home/dev/lab/Viagogo/bin/Debug/net6.0/Viagogo
+/home/dev/lab/Viagogo/bin/Debug/net6.0/Viagogo.deps.json
+/home/dev/lab/Viagogo/bin/Debug/net6.0/Viagogo.runtimeconfig.json
+/home/dev/lab/Viagogo/bin/Debug/net6.0/Viagogo.dll
+/home/dev/lab/Viagogo/bin/Debug/net6.0/ref/Viagogo.dll
+/home/dev/lab/Viagogo/bin/Debug/net6.0/Viagogo.pdb
+/home/dev/lab/Viagogo/obj/Debug/net6.0/Viagogo.csproj.AssemblyReference.cache
+/home/dev/lab/Viagogo/obj/Debug/net6.0/Viagogo.GeneratedMSBuildEditorConfig.editorconfig
+/home/dev/lab/Viagogo/obj/Debug/net6.0/Viagogo.AssemblyInfoInputs.cache
+/home/dev/lab/Viagogo/obj/Debug/net6.0/Viagogo.AssemblyInfo.cs
+/home/dev/lab/Viagogo/obj/Debug/net6.0/Viagogo.csproj.CoreCompileInputs.cache
+/home/dev/lab/Viagogo/obj/Debug/net6.0/Viagogo.dll
+/home/dev/lab/Viagogo/obj/Debug/net6.0/ref/Viagogo.dll
+/home/dev/lab/Viagogo/obj/Debug/net6.0/Viagogo.pdb
+/home/dev/lab/Viagogo/obj/Debug/net6.0/Viagogo.genruntimeconfig.cache
