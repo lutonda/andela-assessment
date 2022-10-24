@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rDM4TWIlZyWGzy9+rhM47LFxJZtigVBUaq0IV5kqsWsvNk/newbaBkj2OewU9ZEVca1Sys2IxkRrSF6rOQQO6w==",
+  "dgSpecHash": "FTx2/MEvTq1f1mFppop8w6uSRIo+yULDhapgUCBx/Nrq8qZ2Au2VuaAuIU0mpz2FgAYhMJruXRj+PaBOat2zhg==",
   "success": true,
-  "projectFilePath": "/home/dev/lab/Viagogo/Viagogo.csproj",
+  "projectFilePath": "/workspace/andela-assessment/Viagogo.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

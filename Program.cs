@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 namespace Viagogo
@@ -16,11 +17,8 @@ namespace Viagogo
     }
     public class Solution
     {
-        static void Main(string[] args)
-        {
-            //= 1. What should be your approach to getting the list of events? 
 
-            var events = new List<Event>{
+        static List<Event> Events ()=> new List<Event>{
                     new Event{ Name = "Phantom of the Opera", City = "New York"},
                     new Event{ Name = "Metallica", City = "Los Angeles"},
                     new Event{ Name = "Metallica", City = "New York"},
@@ -31,21 +29,26 @@ namespace Viagogo
                     new Event{ Name = "LadyGaGa", City = "San Francisco"},
                     new Event{ Name = "LadyGaGa", City = "Washington"}
                 };
+        static List<Customer> Customers ()=>new List<Customer>{
+                new Customer { Name = "John Smith", City = "New York" },
+               new Customer{ Name = "Nathan", City = "New York"},
+                new Customer{ Name = "Bob", City = "Boston"},
+                new Customer{ Name = "Cindy", City = "Chicago"},
+                new Customer{ Name = "Lisa", City = "Los Angeles"}
+                };
+        static void Main(string[] args)
+        {
+            //= 1. What should be your approach to getting the list of events? 
+            var stopWatch=new Stopwatch();
+            var tasks=List<Task>();
+            stopWatch.Start();
+            var events = Events();
             //1. find out all events that arein cities of customer
 
             // then add to email.
             //: For all customers
-            var customers = new List<Customer>{
-                new Customer { Name = "John Smith", City = "New York" }
-                //...
-                /*
-               ,new Customer{ Name = "Nathan", City = "New York"},
-                new Customer{ Name = "Bob", City = "Boston"},
-                new Customer{ Name = "Cindy", City = "Chicago"},
-                new Customer{ Name = "Lisa", City = "Los Angeles"}
-                */
-                };
-
+            var customers = Customers();
+           // var threads=List<Thread>();
             //: Find all that Match
             foreach (var customer in customers)
             {
@@ -59,17 +62,24 @@ namespace Viagogo
                                         //Get the top 5 closest
                                         .Take(5);
 
+                Task.Run(()=>{
                 foreach (var ev in eventForCustomers)
                 {
                     //1.2 Call the AddToEmail to send Emails
                     AddToEmail(customer, ev, GetPrice(ev));
                 }
+                }
+                );//.Start();
             }
 
             /*
             * We want you to send an email to this customer with all events in their city
             * Just call AddToEmail(customer, event) for each event you think they should get
             */
+            stopWatch.Stop();
+
+            Console.WriteLine(stopWatch.ElapsedMilliseconds);
+            Console.ReadLine();
         }
 
         // You do not need to know how these methods work
